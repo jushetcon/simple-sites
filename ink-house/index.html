@@ -34,7 +34,7 @@
 		<section class="hero">
 			<div class="container">
 				<div class="hero__inner">
-					<img src="./img/bird.png" alt="hero__bird">
+					<img class='hero__image' src="./img/bird.png" alt="hero__bird">
 					<div class="hero__information">
 						<h1 class="hero__title main-title">
 							Реплики картин <br> от <span>Ink. House</span>
@@ -186,7 +186,7 @@
 						<p class="our-team__text">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет
 							оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены
 							отталкиваться от того, что консультация с широким активом.</p>
-						<img class="our-team__img" src="./img/our-team-circles.png" alt="our-team-circles">
+						<img class="our-team__circles" src="./img/our-team-circles.png" alt="our-team-circles">
 					</div>
 				</div>
 			</div>
@@ -199,12 +199,14 @@
 					<p class="footer__left-logo">
 						Ink. House
 					</p>
-					<p class="footer__left-number">
-						+7 (999) 543-54-54
-					</p>
-					<span class="footer__left-span">
-						Мастерская
-					</span>
+					<div class="number__container">
+						<p class="footer__left-number">
+							+7 (999) 543-54-54
+						</p>
+						<span class="footer__left-span">
+							Мастерская
+						</span>
+					</div>
 				</div>
 				<div class="footer__right">
 					<div class="footer__menu">
@@ -247,9 +249,10 @@
 					</div>
 
 					<div class="footer__socials">
-						<img class="footer__right-socials" src="./img/fb.svg" alt="fb">
-						<img class="footer__right-socials" src="./img/inst.svg" alt="inst">
-						<img class="footer__right-socials" src="./img/yt.svg" alt="yt">
+						<a class="footer__social-link" href="#"><img class="footer__right-socials" src="./img/fb.svg" alt="fb"></a>
+						<a class="footer__social-link" href="#"><img class="footer__right-socials" src="./img/inst.svg"
+								alt="inst"></a>
+						<a class="footer__social-link" href="#"><img class="footer__right-socials" src="./img/yt.svg" alt="yt"></a>
 						<p class="footer__right-text">
 							Ink. House ®
 						</p>
