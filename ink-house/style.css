@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -362,6 +363,32 @@ body {
 .footer__right-text {
 	margin-bottom: 9px;
 }
+.flip {
+	transform: rotate(90deg);
+}
+
+body.no-scroll {
+	overflow: hidden;
+}
+
+.header__nav-btn {
+	width: 30px;
+	height: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	display: none;
+}
+.header__nav-btn span {
+	height: 2px;
+	width: 100%;
+	background-color: #4c5866;
+}
+
 @media (max-width: 1200px) {
 	.paint__cards {
 		grid-template-columns: repeat(2, 1fr);
@@ -564,5 +591,339 @@ body {
 	.footer__socials {
 		margin-right: 37px;
 		margin-top: 9px;
+	}
+}
+
+@media (max-width: 760px) {
+	.header__inner {
+		padding-top: 24px;
+		padding-bottom: 17px;
+		display: flex;
+		flex-direction: column;
+	}
+	.header__logo {
+		margin: 0 auto;
+		padding-bottom: 22px;
+	}
+	.header__hr {
+		border: none;
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: #c3d1c6;
+	}
+	.header__menu {
+		padding-top: 18px;
+	}
+	.header__item:nth-child(3) {
+		margin-right: auto;
+	}
+	.hero__image {
+		width: 195px;
+		height: 239px;
+		padding-top: 50px;
+	}
+	.main-title {
+		font-size: 36px;
+	}
+	.hero {
+		padding-bottom: 50px;
+	}
+	.hero__information {
+		padding-top: 50px;
+	}
+	.paint_title {
+		padding-bottom: 20px;
+		margin-left: 0;
+	}
+	.card-img {
+		width: 200px;
+		height: 250px;
+		margin: 0 auto;
+	}
+	.card {
+		width: 240px;
+		height: 514px;
+	}
+	.card__author {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.card__name {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	.card__btn {
+		width: 200px;
+		height: 50px;
+		font-size: 18px;
+		padding: 0;
+	}
+	.card__desc {
+		margin-bottom: 15px;
+		min-height: 48px;
+	}
+	.card__price {
+		margin-bottom: 10px;
+	}
+	.paint__top {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer__right {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer__socials {
+		margin: 0 auto;
+	}
+	.footer__hr {
+		margin-top: 16px;
+		margin-bottom: 16px;
+		border: none;
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: #c3d1c6;
+	}
+}
+
+@media (max-width: 576px) {
+	.header__inner {
+		padding-left: 33px;
+		padding-right: 33px;
+	}
+	.header__logo {
+		padding-bottom: 11px;
+	}
+	.header__menu {
+		padding-top: 8px;
+	}
+	.header__nav {
+		padding-top: 10px;
+	}
+	.hero__inner {
+		padding-left: 33px;
+		padding-right: 33px;
+	}
+	.hero__image {
+		display: none;
+	}
+	.hero__image510 {
+		display: block;
+		width: 195px;
+		height: 239px;
+		margin-top: 50px;
+	}
+	.hero__information {
+		padding-top: 47px;
+	}
+	.hero__title {
+		line-height: 30px;
+		margin-bottom: 6px;
+	}
+	.hero__text {
+		line-height: 123%;
+		margin-bottom: 20px;
+	}
+	.hero__button {
+		width: 178px;
+		height: 50px;
+		padding: 0;
+	}
+	.paint__top {
+		padding-left: 33px;
+		padding-right: 33px;
+		margin-bottom: 17px;
+	}
+	.paint_title {
+		font-size: 24px;
+		padding-bottom: 12px;
+	}
+	.paint__cards {
+		padding: 0 33px;
+	}
+	.hero {
+		padding-bottom: 35px;
+	}
+	.card__author {
+		margin-bottom: 9px;
+	}
+	.card__desc {
+		font-size: 16px;
+		margin-bottom: 3px;
+	}
+	.card__price {
+		font-size: 20px;
+	}
+	.card-img {
+		margin-bottom: 7px;
+	}
+	.paint {
+		padding-bottom: 50px;
+	}
+	.new_collection__inner {
+		padding-top: 51px;
+	}
+	.new_collection__title {
+		font-size: 24px;
+		padding-left: 64px;
+		margin-bottom: 6px;
+	}
+	.new_collection__descr {
+		font-size: 16px;
+		margin-bottom: 0;
+	}
+	.new_collection__descr + .new_collection__descr {
+		margin-bottom: 0;
+	}
+	.new_collection__btn {
+		width: 190px;
+		height: 50px;
+		padding: 0;
+	}
+	.our-team__img580 {
+		display: block;
+		align-self: self-start;
+	}
+	.our-team__img780 {
+		display: none;
+	}
+	.new_collection__inner {
+		padding-bottom: 52px;
+	}
+	.our-team__inner {
+		padding-left: 33px;
+		padding-right: 33px;
+		padding-top: 50px;
+	}
+	.our-team__title {
+		font-size: 24px;
+	}
+	.our-team__text {
+		font-size: 16px;
+	}
+
+	@media (max-width: 570px) {
+		.header__inner {
+			padding-top: 23px;
+			padding-left: 15px;
+			padding-right: 15px;
+			background: linear-gradient(to bottom, white 50%, #e1ede6 50%);
+			z-index: 15;
+		}
+		.cart_mobile {
+			display: block;
+		}
+		.header__nav {
+			display: flex;
+			justify-content: space-between;
+		}
+		.header__hr {
+			display: none;
+		}
+		.header__nav-btn {
+			display: flex;
+			z-index: 10;
+			transition: all 0.5s ease;
+		}
+		.header__menu {
+			position: absolute;
+			z-index: 5;
+			background-color: #e1ede6;
+			flex-direction: column;
+			top: 70px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 100vh;
+			padding-top: 70px;
+			padding-left: 15px;
+			transform: translateX(-100%);
+			transition: transform 0.5s ease;
+		}
+
+		.header__menu--active {
+			transform: translateX(0);
+		}
+
+		.header__item:nth-child(4) {
+			display: none;
+		}
+		.header__item:nth-child(3) {
+			margin-right: 0;
+		}
+		.header__logo {
+			margin: 0 auto;
+		}
+		.paint__cards {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+@media (max-width: 500px) {
+	.hero__image510 {
+		display: none;
+	}
+	.hero {
+		padding-bottom: 60px;
+	}
+	.hero__title {
+		margin-bottom: 20px;
+	}
+	.hero__text {
+		margin-bottom: 40px;
+	}
+	.paint__btns {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 450px) {
+	.hero__inner {
+		padding: 0 15px;
+	}
+	.paint__top {
+		padding: 0 15px;
+	}
+	.paint__cards {
+		padding: 0 15px;
+	}
+	.new_collection__inner {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.new_collection__btn {
+		min-width: 90%;
+		margin-top: 30px;
+	}
+	.new_collection__descr {
+		min-width: 290px;
+	}
+	.our-team__inner {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.our-team__img580 {
+		display: none;
+	}
+	.our-team__imgM {
+		display: block;
+	}
+	.paint__btns {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer__inner {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.footer__left {
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+	.footer__menu {
+		flex-direction: column;
+		margin: 0 auto;
 	}
 }
